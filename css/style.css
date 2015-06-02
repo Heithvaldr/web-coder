@@ -64,7 +64,8 @@ header img {
 
 /* SLIDER PART */
 .slider-wrapper {
-    height: 504px;
+    padding-top: 20px;
+    height: 484px;
     background-color: #ff8b1e;
 }
 .slider {
@@ -97,9 +98,6 @@ form {
 form p:first-letter {
     text-transform: capitalize;
 }
-form p {
-    margin-right: 69px;
-}
 h2 {
     margin-top: 22px;
     color: #ff8210;
@@ -116,15 +114,34 @@ h2:first-letter {
 }
 
 
-/* RATIO GENDER SELECT */
-.gender-select p {
-    padding-top: 8px;
-    vertical-align: top;
+/* ROW-NAMES */
+.row-names {
     display: inline-block;
+    width: 45px;
+    margin-right: 50px;
+    margin-top: 33px;
+}
+.row-names p {
+    display: block;
+    margin-bottom: 32px;
+}
+.row-values {
+    width: 325px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* RATIO GENDER SELECT */
+.gender-select {
+    vertical-align: top;
+    display: block;
+    margin-top: 25px;
 }
 .looking-for {
-    margin-right: 15px;
-    margin-left: 13px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 8px 15px 0 13px;
 }
 #left_male, #left_female {
     display: none;
@@ -137,12 +154,16 @@ h2:first-letter {
     display: inline-block;
     padding: 3px 15px;
     cursor: pointer;
-    background-color: white;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(245,250,251,1)), color-stop(100%, rgba(230,231,231,1)));
+    background: -webkit-linear-gradient(top, rgba(245,250,251,1) 0%, rgba(230,231,231,1) 100%);
+    background: linear-gradient(to bottom, rgba(245,250,251,1) 0%, rgba(230,231,231,1) 100%);
+    background: -moz-linear-gradient(top, rgba(245,250,251,1) 0%, rgba(230,231,231,1) 100%);
+    background: -ms-linear-gradient(top, rgba(245,250,251,1) 0%, rgba(230,231,231,1) 100%);
+    background: -o-linear-gradient(top, rgba(245,250,251,1) 0%, rgba(230,231,231,1) 100%);    
 }
 .female-left, .female-right {
     content: url(../images/female-orange.png);
     border-radius: 18px 0 0 18px;
-
 }
 .male-left, .male-right {
     margin-left: -5px;
@@ -163,6 +184,98 @@ h2:first-letter {
 #left_male:checked ~ .male-left, #right_male:checked ~ .male-right {
     content: url(../images/male-white.png);
 }
+
+
+/* ENTER YOUR NAME */
+.enter-name {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    display: block;
+}
+.enter-name input{
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(222,223,223,1)), color-stop(100%, rgba(244,249,250,1)));
+    background: -webkit-linear-gradient(top, rgba(222,223,223,1) 0%, rgba(244,249,250,1) 100%);
+    background: linear-gradient(to bottom, rgba(222,223,223,1) 0%, rgba(244,249,250,1) 100%);
+    background: -moz-linear-gradient(top, rgba(222,223,223,1) 0%, rgba(244,249,250,1) 100%);
+    background: -ms-linear-gradient(top, rgba(222,223,223,1) 0%, rgba(244,249,250,1) 100%);
+    background: -o-linear-gradient(top, rgba(222,223,223,1) 0%, rgba(244,249,250,1) 100%);
+    padding-left: 15px;     
+    width: 308px;
+    height: 34px;
+    border-radius: 20px;
+    border: solid 1px #909090;
+    outline: none;
+}
+
+
+/* AGE */
+.age {
+    margin-top: 14px;
+    margin-bottom: 15px;
+    display: block;
+}
+.age select {
+    outline: none;
+    padding-left: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 18px;
+    border: solid 1px #909090;
+    height: 34px;
+    color: #666666;
+    background: url(../images/dropdown-arrow.png) no-repeat right #edefef;
+}
+#day_select, #month_select, #year_select {
+    display: inline-block;
+}
+#day_select {
+    margin-right: 5px;
+    width: 82px;
+}
+#month_select {
+    margin-right: 5px;
+    width: 117px;
+}
+#year_select {
+    width: 103px;
+}
+
+
+/* CITY */
+.city {
+    
+}
+#city-select {
+    outline: none;
+    padding-left: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 18px;
+    border: solid 1px #909090;
+    height: 34px;
+    width: 318px;
+    color: #666666;
+    background: url(../images/dropdown-arrow.png) no-repeat right #edefef;
+}
+
+
+/* WHAT'S UP */
+.whats-up {
+    margin-top: 15px;
+}
+.life, .drink {
+    display: inline-block;
+}
+.life input, .drink input {
+    display: block;
+}
+.drink {
+    vertical-align: top;
+}
+
+
 
 /* SECTION PART */
 .wrapper {
