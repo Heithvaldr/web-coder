@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>web-coder</title>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     
@@ -13,12 +14,38 @@
         </header>
         
         <section>
-            <div class="slider">
-                <div class="slide">
-                    <img src="images/slide-1.png" class="active" alt="">
-                    <img src="images/slide-2.png" alt="">
-                    <img src="images/slide-3.png" alt="">
-                    <img src="images/slide-4.png" alt="">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="images/slide-1.png" alt="">
+                        <img src="images/slide-2.png" class="active" alt="">
+                        <img src="images/slide-3.png" alt="">
+                        <img src="images/slide-4.png" alt="">
+                    </div>
+                        
+                    <div class="form-wrapper">
+                        <form action="">
+                            <h2>join us now. <span>i</span>t's <span>free</span></h2>
+                            
+                            <div class="gender-select">
+                                <p>
+                                    i am
+                                </p>
+                                <input type="radio" checked="checked" id="left_female" name="left_gender"/>
+                                <label class="female-left" for="left_female"></label>
+                                <input type="radio" id="left_male" name="left_gender"/>
+                                <label class="male-left" for="left_male"></label>
+                                <p class="looking-for">
+                                    <i class="fa fa-search"></i>
+                                    looking for
+                                </p>
+                                <input type="radio" id="right_female" name="right_gender"/>
+                                <label class="female-right" for="right_female"></label>
+                                <input type="radio" checked="checked" id="right_male" name="right_gender"/>
+                                <label class="male-right" for="right_male"></label>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
             
