@@ -364,7 +364,7 @@ h3:first-letter {
 }
 .code-this-block{
     width: 475px;
-    height: 260px;
+    height: 265px;
     
     overflow: hidden;
 }
@@ -376,7 +376,7 @@ h3:first-letter {
 .code-this-block p {
     font-family: SourceSansPro-Light;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 21px;
     text-align: justify;
     color: #4e4e4e;
     margin-left: 10px;
@@ -413,4 +413,66 @@ h3:first-letter {
     height: 70px;
     display: inline-block;
     margin-left: 5px;
+}
+
+
+/* HOW TO SUCCEED */
+.how-to-succeed {
+    margin-top: 75px;
+}
+.how-to-succeed h3 {
+    margin-bottom: 15px;
+}
+.how-to-succeed p{
+    font-family: SourceSansPro-Light;
+    font-size: 14px;
+    line-height: 21px;
+    height: 340px;
+    -webkit-column-count: 3; 
+    -moz-column-count: 3; 
+    column-count: 3;
+}
+.in-my-account {
+    display: block;
+    padding-left: 16px;
+    border-left: 3px solid #ffc28c;
+    color: #ffc28c;
+}
+.how-to-succeed a {
+    color: #ffc28c;
+}
+#click_here {
+    float: right;
+}
+.blockquote {
+    font-style: italic;
+    color: #a9a9a9;
+    position: relative;
+    padding: 0 20px;
+    display: block;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+.blockquote:before {
+    font-style: normal;
+    left: 0;
+    top: 10px;
+    position: absolute;
+    color: #cfcfcf;
+    content: open-quote;
+    font-size: 72px;
+}
+.blockquote:after {
+    font-style: normal;
+    right: 0;
+    bottom: -30px;
+    position: absolute;
+    color: #cfcfcf;
+    content: close-quote;
+    font-size: 72px;
+}
+
+
+/* FOOTER */
+footer {
+    clear: both;
 }
