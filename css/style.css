@@ -414,11 +414,48 @@ h3:first-letter {
     margin-left: 5px;
 }
 .user {
-    background-image: url(../images/user.png);
+    background-color:#000;
+    background: url(../images/user.png);
     width: 70px;
     height: 70px;
     display: inline-block;
     margin-left: 5px;
+}
+.user:hover > .overlay {
+    width: 70px;
+    height: 70px;
+    position:absolute;
+    background-color:#000;
+    opacity: 0.5;
+}
+.overlay a, .overlay p {
+    display: none;
+}
+.user:hover > .overlay {
+    width: 70px;
+    height: 70px;
+    position:absolute;
+    background-color:#000;
+    opacity: 0.5;
+}
+.user:hover > .overlay p {
+    cursor: default;
+    text-align: center;
+    margin-top: 18px;
+    text-transform: capitalize;
+    opacity: 1;
+    font-size: 16px;
+    font-family: SourceSansPro-ExtraLight;
+    color: white;
+    position: relative;
+    display: block;
+}
+.user:hover > .overlay a {
+    margin-top: 8px;
+    margin-left: 10px;
+    position: relative;
+    display: inline-block;
+    opacity: 1;
 }
 .folders {
     margin-top: 15px;
@@ -550,6 +587,7 @@ h3:first-letter {
     position: relative;
 }
 .step {
+    height: 26px;
     width: 44px;
     position: relative;
     background: #f3f7f8;
@@ -692,7 +730,23 @@ h3:first-letter {
     text-align: center;
     padding-top: 30%;
 }
-
+.rating {
+    margin-top: 10px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+.rating > span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+    color: #ff9d0f;
+   position: absolute;
+}
 
 
 /* HOW TO SUCCEED */
