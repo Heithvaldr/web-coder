@@ -5,3 +5,9 @@ var deviceAgent = navigator.userAgent.toLowerCase();
             $('#' + $(event.target).attr('for')).attr('checked', true).change();
         });
     }
+
+$("li").click(function(e) {
+  e.preventDefault();
+  $("li").removeClass("selected");
+  $(this).addClass("selected");
+});

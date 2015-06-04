@@ -388,6 +388,12 @@ h3:first-letter {
     display: inline-block;
     vertical-align: top;
 }
+
+
+/* USER LIST */
+.users {
+    margin-top: 25px;
+}
 .user-list-wrapper {
     margin-left: 25px;
 }
@@ -413,6 +419,76 @@ h3:first-letter {
     height: 70px;
     display: inline-block;
     margin-left: 5px;
+}
+.folders {
+    margin-top: 15px;
+    margin-left: 33px;
+    height: 185px;
+    width: 388px;
+}
+.folders input {
+    display: none;
+}
+.folders label {
+    font-family: SourceSansPro-Light;
+    font-size: 16px;
+    color: #a5a5a5;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 0 -1px 0;
+    padding: 8px 15px;
+    text-align: center;
+    background: #f8f8f8;
+    border: 1px solid;
+    border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    border-top-color: #efefef;
+    border-right-color: #e0e0e0;
+    border-bottom-color: #e7e7e7;
+    border-left-color: #cccccc;
+}
+.folders label:nth-child(4) {
+    margin-left: -5px;    
+}
+.folders input:checked + label {
+    color: #ffa352;
+    background: #ffffff;
+    border-top-color: #eeeeee;
+    border-right-color: #cccccc;
+    border-bottom-color: #ffffff;
+    border-left-color: #cccccc;
+}
+.folders input:checked + label span {
+    color: #a5a5a5;
+}
+#tab1:checked ~ #content1, #tab2:checked ~ #content2 {
+    display: block;
+    background: #ffffff;
+}
+.folder {
+    background: #f8f8f8;
+    display: none;
+    z-index: -1;
+    width: 386px;
+    height: 151px;
+    border-radius: 0px 10px 10px 10px;
+    -moz-border-radius: 0px 10px 10px 10px;
+    -webkit-border-radius: 0px 10px 10px 10px;
+    border: 1px solid;
+    border-top-color: #eeeeee;
+    border-right-color: #cccccc;
+    border-bottom-color: #999999;
+    border-left-color: #cccccc;
+}
+#red {
+    
+}
+#blue {
+    
+}
+.folders ul li {
+    display: inline-block;
 }
 
 
